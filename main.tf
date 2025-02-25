@@ -13,7 +13,7 @@ terraform {
     resource_group_name  = "rg-terraform"
     storage_account_name = "itgostatefiles"
     container_name       = "terraform-state-files"
-    key                  = "terraform.tfstate"
+    key                  = "vultr-swarm.tfstate"
     use_azuread_auth     = true
   }
 }
