@@ -14,7 +14,7 @@ TS_AUTHKEY=${tailscale_auth_key}
 EOF
 
 # Run each stack by name
-docker-compose -f bitwarden-compose.yml up -d
-docker-compose -f caddyv2-compose.yml up -d
-docker-compose -f portainer-compose.yml up -d
-#docker-compose -f tailscale-compose.yml up -d
+docker compose -f bitwarden-compose.yml up -d
+docker compose -f caddyv2-compose.yml up -d
+docker compose -f portainer-compose.yml up -d
+#docker compose -f tailscale-compose.yml up -d
