@@ -2,7 +2,7 @@
 set -e
 
 # Clone your repo
-git clone https://github.com/nathangemmill/vultr-swarm.git /tmp/docker-apps
+git clone --branch private-vaultwarden https://github.com/nathangemmill/vultr-swarm.git /tmp/docker-apps
 
 # Go to the folder containing your compose files
 cd /tmp/docker-apps/docker-compose
