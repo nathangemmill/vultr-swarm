@@ -18,3 +18,19 @@ data "azurerm_key_vault_secret" "tfstate_Storage_Secret" {
     read = "1m"
   }
 }
+
+data "azurerm_key_vault_secret" "Bitwarden_ADMIN_Secret" {
+  name         = "Bitwarden-ADMIN-Secret"
+  key_vault_id = data.azurerm_key_vault.VultrAPI_Vault.id
+  timeouts {
+    read = "1m"
+  }
+}
+
+data "azurerm_key_vault_secret" "Tailscale_Auth_Key" {
+  name         = "Tailscale-Auth-Key"
+  key_vault_id = data.azurerm_key_vault.VultrAPI_Vault.id
+  timeouts {
+    read = "1m"
+  }
+}
