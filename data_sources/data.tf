@@ -34,3 +34,11 @@ data "azurerm_key_vault_secret" "Tailscale_Auth_Key" {
     read = "1m"
   }
 }
+
+data "azurerm_key_vault_secret" "itgo_3080_ssh_key" {
+  name         = "itgo-3080-ssh-key"
+  key_vault_id = data.azurerm_key_vault.VultrAPI_Vault.id
+  timeouts {
+    read = "1m"
+  }
+}
