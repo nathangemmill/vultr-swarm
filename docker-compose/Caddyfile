@@ -1,0 +1,7 @@
+bw.itgo.com.au {
+    reverse_proxy :80
+}
+portainer.itgo.com.au {
+        reverse_proxy :9000
+        reverse_proxy :9443
+}
